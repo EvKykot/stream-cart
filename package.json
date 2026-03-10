@@ -1,0 +1,10 @@
+{
+  "name": "stream-cart",
+  "private": true,
+  "scripts": {
+    "infra:up": "docker-compose up -d",
+    "infra:down": "docker-compose down",
+    "backend:dev": "npm run start:dev --prefix backend",
+    "dev": "docker-compose up -d && npm run start:dev --prefix backend"
+  }
+}
